@@ -1,0 +1,27 @@
+{
+  "name": "display-task",
+  "version": "1.0.0",
+  "description": "Display tasks on stdout.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/chocolateloverraj/display-task.git"
+  },
+  "keywords": [
+    "display",
+    "task",
+    "stdout",
+    "tasks",
+    "progress",
+    "show"
+  ],
+  "author": "Rajas Paranjpe",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/chocolateloverraj/display-task/issues"
+  },
+  "homepage": "https://github.com/chocolateloverraj/display-task#readme"
+}
