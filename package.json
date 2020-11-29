@@ -3,8 +3,11 @@
   "version": "1.0.0",
   "description": "Display tasks on stdout.",
   "main": "index.js",
+  "type": "module",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "node --experimental-vm-modules node_modules/jest/bin/jest.js",
+    "test:ci": "FORCE_COLOR=1 node --experimental-vm-modules node_modules/jest/bin/jest.js --ci",
+    "lint": "standard"
   },
   "repository": {
     "type": "git",
@@ -23,5 +26,9 @@
   "bugs": {
     "url": "https://github.com/chocolateloverraj/display-task/issues"
   },
-  "homepage": "https://github.com/chocolateloverraj/display-task#readme"
+  "homepage": "https://github.com/chocolateloverraj/display-task#readme",
+  "devDependencies": {
+    "jest": "^26.6.3",
+    "standard": "^16.0.3"
+  }
 }
