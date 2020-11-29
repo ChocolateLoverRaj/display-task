@@ -1,4 +1,4 @@
-import Task from '../tasks/task'
+import Task from './task'
 
 declare class HideTask<T extends Task> extends Task {
   constructor(task: T)

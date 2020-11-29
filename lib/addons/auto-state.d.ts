@@ -1,4 +1,4 @@
-import Addon from '../addons/addon'
+import Addon from './addon'
 import StateAddon from './state-addon'
 
 declare class AutoStateAddon<T1 extends Addon, T2 extends StateAddon<unknown>> extends Addon {
