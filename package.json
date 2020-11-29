@@ -32,6 +32,7 @@
     "eventemitter3": "^4.0.7",
     "jest": "^26.6.3",
     "jest-mock-imports": "^1.1.0",
+    "no-resolve": "^1.0.0",
     "sinon": "^9.2.1",
     "standard": "^16.0.3"
   },
