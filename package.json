@@ -4,6 +4,7 @@
   "description": "Display tasks on stdout.",
   "main": "index.js",
   "type": "module",
+  "exports": {},
   "scripts": {
     "test": "node --experimental-vm-modules node_modules/jest/bin/jest.js",
     "test:ci": "FORCE_COLOR=1 node --experimental-vm-modules node_modules/jest/bin/jest.js --ci",
@@ -29,7 +30,7 @@
   },
   "homepage": "https://github.com/chocolateloverraj/display-task#readme",
   "devDependencies": {
-    "@babel/core": "^7.12.9",
+    "capitalize": "^2.0.3",
     "dirname-filename-esm": "^1.0.2",
     "eventemitter3": "^4.0.7",
     "jest": "^26.6.3",
