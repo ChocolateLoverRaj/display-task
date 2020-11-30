@@ -4,12 +4,34 @@
   "description": "Display tasks on stdout.",
   "main": "index.js",
   "type": "module",
-  "exports": {},
+  "exports": {
+    ".": "./lib/index.js",
+    "./tasks": "./lib/tasks/index.js",
+    "./tasks/concat": "./lib/tasks/concat.js",
+    "./tasks/custom": "./lib/tasks/custom.js",
+    "./tasks/hide": "./lib/tasks/hide.js",
+    "./tasks/map": "./lib/tasks/map.js",
+    "./tasks/name": "./lib/tasks/name.js",
+    "./tasks/set": "./lib/tasks/set.js",
+    "./tasks/sort-set": "./lib/tasks/sort-set.js",
+    "./tasks/task": "./lib/tasks/task.js",
+    "./addons": "./lib/addons/index.js",
+    "./addons/addon": "./lib/addons/addon.js",
+    "./addons/auto-state": "./lib/addons/auto-state.js",
+    "./addons/color": "./lib/addons/color.js",
+    "./addons/concat": "./lib/addons/concat.js",
+    "./addons/max-length": "./lib/addons/max-length.js",
+    "./addons/set": "./lib/addons/set.js",
+    "./addons/state": "./lib/addons/state.js",
+    "./addons/text": "./lib/addons/text.js",
+    "./": "./"
+  },
   "scripts": {
     "test": "node --experimental-vm-modules node_modules/jest/bin/jest.js",
     "test:ci": "FORCE_COLOR=1 node --experimental-vm-modules node_modules/jest/bin/jest.js --ci",
     "lint": "standard",
-    "build": "node build/build.js"
+    "build": "node build/build.js",
+    "prepublishOnly": "npm run build"
   },
   "repository": {
     "type": "git",
@@ -31,6 +53,8 @@
   "homepage": "https://github.com/chocolateloverraj/display-task#readme",
   "devDependencies": {
     "capitalize": "^2.0.3",
+    "clone": "^2.1.2",
+    "deep-equal": "^2.0.4",
     "dirname-filename-esm": "^1.0.2",
     "eventemitter3": "^4.0.7",
     "jest": "^26.6.3",
