@@ -13,8 +13,13 @@ node_modules/
 # Testing related stuff
 jest/
 jest.config.js
+transformer.cjs
 test/
 test-lib/
 *.test.js
 **/__snapshots__/
 **/__mocks__/
+
+# Developing / Building
+.nodemonignore
+build/

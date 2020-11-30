@@ -31,7 +31,7 @@
     "test:ci": "FORCE_COLOR=1 node --experimental-vm-modules node_modules/jest/bin/jest.js --ci",
     "lint": "standard",
     "build": "node build/build.js",
-    "prepublishOnly": "npm run build"
+    "prepublishOnly": "npm run test && npm run lint && npm run build"
   },
   "repository": {
     "type": "git",
