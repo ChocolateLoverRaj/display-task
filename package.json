@@ -2,7 +2,7 @@
   "name": "display-task",
   "version": "1.0.0",
   "description": "Display tasks on stdout.",
-  "main": "index.js",
+  "main": "lib/index.js",
   "type": "module",
   "exports": {
     ".": "./lib/index.js",
